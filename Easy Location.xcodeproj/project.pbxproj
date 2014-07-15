@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		450057C5195AE0B700E1496E /* LocationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450057C4195AE0B700E1496E /* LocationDetailsViewController.m */; };
+		45005B18195C58CF00BD9BDF /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45005B17195C58CF00BD9BDF /* HudView.m */; };
+		45005B21195C9A3000BD9BDF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45005B20195C9A3000BD9BDF /* CoreData.framework */; };
+		45005B24195C9D0B00BD9BDF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45005B22195C9D0B00BD9BDF /* DataModel.xcdatamodeld */; };
+		45005B27195CA1DB00BD9BDF /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 45005B26195CA1DB00BD9BDF /* Location.m */; };
+		45043288196198E200856817 /* NSMutableString+AddText.m in Sources */ = {isa = PBXBuildFile; fileRef = 45043287196198E200856817 /* NSMutableString+AddText.m */; };
+		450432EF19619C7D00856817 /* Sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 450432BF19619C7D00856817 /* Sound.caf */; };
+		450432F51961C0B500856817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450432F41961C0B500856817 /* AudioToolbox.framework */; };
+		450432F71961C65600856817 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450432F61961C65600856817 /* QuartzCore.framework */; };
+		4535949C195E0BDC00AD7D62 /* LocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4535949B195E0BDC00AD7D62 /* LocationsViewController.m */; };
+		456140EE195B0CC400E7517C /* CategoryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456140ED195B0CC400E7517C /* CategoryPickerViewController.m */; };
+		4570D4651960CD00000E48DD /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4570D4641960CD00000E48DD /* UIImage+Resize.m */; };
+		458DBD2B195F388200AE639B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458DBD2A195F388200AE639B /* MapKit.framework */; };
+		45D87BB1195F43540064AA0F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D87BB0195F43540064AA0F /* MapViewController.m */; };
+		45DB83241961DF9E00E4BEBB /* easylocation_logo_29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83211961DF9E00E4BEBB /* easylocation_logo_29pt.png */; };
+		45DB83251961DF9E00E4BEBB /* easylocation_logo_60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83221961DF9E00E4BEBB /* easylocation_logo_60pt.png */; };
+		45DB83261961DF9E00E4BEBB /* easylocation_logo_80pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83231961DF9E00E4BEBB /* easylocation_logo_80pt.png */; };
+		45DB83291961E1A100E4BEBB /* easylocation_launch_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83271961E1A100E4BEBB /* easylocation_launch_2x.png */; };
+		45DB832A1961E1A100E4BEBB /* easylocation_launch_r4.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83281961E1A100E4BEBB /* easylocation_launch_r4.png */; };
+		45DB83301961EA9200E4BEBB /* easylocation_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB832F1961EA9200E4BEBB /* easylocation_logo.png */; };
+		45E3400D196DB85300DB49A5 /* Locations.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34003196DB85300DB49A5 /* Locations.png */; };
+		45E3400E196DB85300DB49A5 /* Locations@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34004196DB85300DB49A5 /* Locations@2x.png */; };
+		45E3400F196DB85300DB49A5 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34005196DB85300DB49A5 /* Map.png */; };
+		45E34010196DB85300DB49A5 /* Map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34006196DB85300DB49A5 /* Map@2x.png */; };
+		45E34011196DB85300DB49A5 /* Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34007196DB85300DB49A5 /* Pin.png */; };
+		45E34012196DB85300DB49A5 /* Pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34008196DB85300DB49A5 /* Pin@2x.png */; };
+		45E34013196DB85300DB49A5 /* Tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34009196DB85300DB49A5 /* Tag.png */; };
+		45E34014196DB85300DB49A5 /* Tag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E3400A196DB85300DB49A5 /* Tag@2x.png */; };
+		45E34015196DB85300DB49A5 /* User.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E3400B196DB85300DB49A5 /* User.png */; };
+		45E34016196DB85300DB49A5 /* User@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E3400C196DB85300DB49A5 /* User@2x.png */; };
+		45E34019196DB8DE00DB49A5 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34017196DB8DE00DB49A5 /* Checkmark.png */; };
+		45E3401A196DB8DE00DB49A5 /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34018196DB8DE00DB49A5 /* Checkmark@2x.png */; };
+		45F3B07A195E269C0082B048 /* LocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F3B079195E269C0082B048 /* LocationCell.m */; };
+		45FE56FC1959E52900D752FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE56FB1959E52900D752FE /* Foundation.framework */; };
+		45FE56FE1959E52900D752FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE56FD1959E52900D752FE /* CoreGraphics.framework */; };
+		45FE57001959E52900D752FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE56FF1959E52900D752FE /* UIKit.framework */; };
+		45FE57061959E52900D752FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45FE57041959E52900D752FE /* InfoPlist.strings */; };
+		45FE57081959E52900D752FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE57071959E52900D752FE /* main.m */; };
+		45FE570C1959E52900D752FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE570B1959E52900D752FE /* AppDelegate.m */; };
+		45FE570F1959E52900D752FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FE570D1959E52900D752FE /* Main.storyboard */; };
+		45FE57121959E52900D752FE /* CurrentLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE57111959E52900D752FE /* CurrentLocationViewController.m */; };
+		45FE57171959E52A00D752FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FE57161959E52A00D752FE /* Images.xcassets */; };
+		45FE571E1959E52A00D752FE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE571D1959E52A00D752FE /* XCTest.framework */; };
+		45FE571F1959E52A00D752FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE56FB1959E52900D752FE /* Foundation.framework */; };
+		45FE57201959E52A00D752FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE56FF1959E52900D752FE /* UIKit.framework */; };
+		45FE57281959E52A00D752FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45FE57261959E52A00D752FE /* InfoPlist.strings */; };
+		45FE572A1959E52A00D752FE /* Simple_LocatopmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FE57291959E52A00D752FE /* Simple_LocatopmTests.m */; };
+		45FE57341959F2D400D752FE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE57331959F2D400D752FE /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45FE57211959E52A00D752FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45FE56F01959E52900D752FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FE56F71959E52900D752FE;
+			remoteInfo = "Simple Locatopm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		450057C3195AE0B700E1496E /* LocationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailsViewController.h; sourceTree = "<group>"; };
+		450057C4195AE0B700E1496E /* LocationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailsViewController.m; sourceTree = "<group>"; };
+		45005B16195C58CF00BD9BDF /* HudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HudView.h; path = ../HudView.h; sourceTree = "<group>"; };
+		45005B17195C58CF00BD9BDF /* HudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HudView.m; path = ../HudView.m; sourceTree = "<group>"; };
+		45005B20195C9A3000BD9BDF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		45005B23195C9D0B00BD9BDF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		45005B25195CA1DB00BD9BDF /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = ../Location.h; sourceTree = "<group>"; };
+		45005B26195CA1DB00BD9BDF /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = ../Location.m; sourceTree = "<group>"; };
+		45043286196198E200856817 /* NSMutableString+AddText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+AddText.h"; path = "../NSMutableString+AddText.h"; sourceTree = "<group>"; };
+		45043287196198E200856817 /* NSMutableString+AddText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+AddText.m"; path = "../NSMutableString+AddText.m"; sourceTree = "<group>"; };
+		450432BF19619C7D00856817 /* Sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sound.caf; sourceTree = "<group>"; };
+		450432F41961C0B500856817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		450432F61961C65600856817 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4535949A195E0BDC00AD7D62 /* LocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationsViewController.h; path = ../LocationsViewController.h; sourceTree = "<group>"; };
+		4535949B195E0BDC00AD7D62 /* LocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationsViewController.m; path = ../LocationsViewController.m; sourceTree = "<group>"; };
+		456140EC195B0CC400E7517C /* CategoryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryPickerViewController.h; sourceTree = "<group>"; };
+		456140ED195B0CC400E7517C /* CategoryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryPickerViewController.m; sourceTree = "<group>"; };
+		4570D4631960CD00000E48DD /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "../UIImage+Resize.h"; sourceTree = "<group>"; };
+		4570D4641960CD00000E48DD /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "../UIImage+Resize.m"; sourceTree = "<group>"; };
+		458DBD2A195F388200AE639B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		45D87BAF195F43540064AA0F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		45D87BB0195F43540064AA0F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		45DB83211961DF9E00E4BEBB /* easylocation_logo_29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo_29pt.png; sourceTree = "<group>"; };
+		45DB83221961DF9E00E4BEBB /* easylocation_logo_60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo_60pt.png; sourceTree = "<group>"; };
+		45DB83231961DF9E00E4BEBB /* easylocation_logo_80pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo_80pt.png; sourceTree = "<group>"; };
+		45DB83271961E1A100E4BEBB /* easylocation_launch_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_launch_2x.png; sourceTree = "<group>"; };
+		45DB83281961E1A100E4BEBB /* easylocation_launch_r4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_launch_r4.png; sourceTree = "<group>"; };
+		45DB832F1961EA9200E4BEBB /* easylocation_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo.png; sourceTree = "<group>"; };
+		45E34003196DB85300DB49A5 /* Locations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locations.png; sourceTree = "<group>"; };
+		45E34004196DB85300DB49A5 /* Locations@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locations@2x.png"; sourceTree = "<group>"; };
+		45E34005196DB85300DB49A5 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		45E34006196DB85300DB49A5 /* Map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map@2x.png"; sourceTree = "<group>"; };
+		45E34007196DB85300DB49A5 /* Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin.png; sourceTree = "<group>"; };
+		45E34008196DB85300DB49A5 /* Pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pin@2x.png"; sourceTree = "<group>"; };
+		45E34009196DB85300DB49A5 /* Tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tag.png; sourceTree = "<group>"; };
+		45E3400A196DB85300DB49A5 /* Tag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tag@2x.png"; sourceTree = "<group>"; };
+		45E3400B196DB85300DB49A5 /* User.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User.png; sourceTree = "<group>"; };
+		45E3400C196DB85300DB49A5 /* User@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User@2x.png"; sourceTree = "<group>"; };
+		45E34017196DB8DE00DB49A5 /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
+		45E34018196DB8DE00DB49A5 /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
+		45F3B078195E269C0082B048 /* LocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationCell.h; path = ../LocationCell.h; sourceTree = "<group>"; };
+		45F3B079195E269C0082B048 /* LocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationCell.m; path = ../LocationCell.m; sourceTree = "<group>"; };
+		45FE56F81959E52900D752FE /* Easy Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FE56FB1959E52900D752FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45FE56FD1959E52900D752FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		45FE56FF1959E52900D752FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		45FE57031959E52900D752FE /* Easy Location-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Easy Location-Info.plist"; sourceTree = "<group>"; };
+		45FE57051959E52900D752FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45FE57071959E52900D752FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45FE57091959E52900D752FE /* Easy Location-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Easy Location-Prefix.pch"; sourceTree = "<group>"; };
+		45FE570A1959E52900D752FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45FE570B1959E52900D752FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45FE570E1959E52900D752FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45FE57101959E52900D752FE /* CurrentLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLocationViewController.h; sourceTree = "<group>"; };
+		45FE57111959E52900D752FE /* CurrentLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationViewController.m; sourceTree = "<group>"; };
+		45FE57161959E52A00D752FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45FE571C1959E52A00D752FE /* Easy LocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy LocationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FE571D1959E52A00D752FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		45FE57251959E52A00D752FE /* Easy LocationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Easy LocationTests-Info.plist"; sourceTree = "<group>"; };
+		45FE57271959E52A00D752FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45FE57291959E52A00D752FE /* Simple_LocatopmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_LocatopmTests.m; sourceTree = "<group>"; };
+		45FE57331959F2D400D752FE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45FE56F51959E52900D752FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450432F71961C65600856817 /* QuartzCore.framework in Frameworks */,
+				450432F51961C0B500856817 /* AudioToolbox.framework in Frameworks */,
+				458DBD2B195F388200AE639B /* MapKit.framework in Frameworks */,
+				45005B21195C9A3000BD9BDF /* CoreData.framework in Frameworks */,
+				45FE57341959F2D400D752FE /* CoreLocation.framework in Frameworks */,
+				45FE56FE1959E52900D752FE /* CoreGraphics.framework in Frameworks */,
+				45FE57001959E52900D752FE /* UIKit.framework in Frameworks */,
+				45FE56FC1959E52900D752FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE57191959E52A00D752FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FE571E1959E52A00D752FE /* XCTest.framework in Frameworks */,
+				45FE57201959E52A00D752FE /* UIKit.framework in Frameworks */,
+				45FE571F1959E52A00D752FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4504328919619C7D00856817 /* Resources_3 */ = {
+			isa = PBXGroup;
+			children = (
+				45E34002196DB85300DB49A5 /* images */,
+				450432BE19619C7D00856817 /* Sound */,
+			);
+			path = Resources_3;
+			sourceTree = "<group>";
+		};
+		450432BE19619C7D00856817 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				450432BF19619C7D00856817 /* Sound.caf */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		45DB83201961DF9E00E4BEBB /* easy Location */ = {
+			isa = PBXGroup;
+			children = (
+				45DB832F1961EA9200E4BEBB /* easylocation_logo.png */,
+				45DB83271961E1A100E4BEBB /* easylocation_launch_2x.png */,
+				45DB83281961E1A100E4BEBB /* easylocation_launch_r4.png */,
+				45DB83211961DF9E00E4BEBB /* easylocation_logo_29pt.png */,
+				45DB83221961DF9E00E4BEBB /* easylocation_logo_60pt.png */,
+				45DB83231961DF9E00E4BEBB /* easylocation_logo_80pt.png */,
+			);
+			path = "easy Location";
+			sourceTree = "<group>";
+		};
+		45E34002196DB85300DB49A5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				45E34017196DB8DE00DB49A5 /* Checkmark.png */,
+				45E34018196DB8DE00DB49A5 /* Checkmark@2x.png */,
+				45E34003196DB85300DB49A5 /* Locations.png */,
+				45E34004196DB85300DB49A5 /* Locations@2x.png */,
+				45E34005196DB85300DB49A5 /* Map.png */,
+				45E34006196DB85300DB49A5 /* Map@2x.png */,
+				45E34007196DB85300DB49A5 /* Pin.png */,
+				45E34008196DB85300DB49A5 /* Pin@2x.png */,
+				45E34009196DB85300DB49A5 /* Tag.png */,
+				45E3400A196DB85300DB49A5 /* Tag@2x.png */,
+				45E3400B196DB85300DB49A5 /* User.png */,
+				45E3400C196DB85300DB49A5 /* User@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		45FE56EF1959E52900D752FE = {
+			isa = PBXGroup;
+			children = (
+				45FE57011959E52900D752FE /* Simple Locatopm */,
+				45FE57231959E52A00D752FE /* Simple LocatopmTests */,
+				45FE56FA1959E52900D752FE /* Frameworks */,
+				45FE56F91959E52900D752FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45FE56F91959E52900D752FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45FE56F81959E52900D752FE /* Easy Location.app */,
+				45FE571C1959E52A00D752FE /* Easy LocationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45FE56FA1959E52900D752FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				450432F61961C65600856817 /* QuartzCore.framework */,
+				450432F41961C0B500856817 /* AudioToolbox.framework */,
+				458DBD2A195F388200AE639B /* MapKit.framework */,
+				45005B20195C9A3000BD9BDF /* CoreData.framework */,
+				45FE57331959F2D400D752FE /* CoreLocation.framework */,
+				45FE56FB1959E52900D752FE /* Foundation.framework */,
+				45FE56FD1959E52900D752FE /* CoreGraphics.framework */,
+				45FE56FF1959E52900D752FE /* UIKit.framework */,
+				45FE571D1959E52A00D752FE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45FE57011959E52900D752FE /* Simple Locatopm */ = {
+			isa = PBXGroup;
+			children = (
+				45FE570A1959E52900D752FE /* AppDelegate.h */,
+				45FE570B1959E52900D752FE /* AppDelegate.m */,
+				45FE570D1959E52900D752FE /* Main.storyboard */,
+				456140EC195B0CC400E7517C /* CategoryPickerViewController.h */,
+				456140ED195B0CC400E7517C /* CategoryPickerViewController.m */,
+				45FE57101959E52900D752FE /* CurrentLocationViewController.h */,
+				45FE57111959E52900D752FE /* CurrentLocationViewController.m */,
+				45005B22195C9D0B00BD9BDF /* DataModel.xcdatamodeld */,
+				45005B16195C58CF00BD9BDF /* HudView.h */,
+				45005B17195C58CF00BD9BDF /* HudView.m */,
+				45005B25195CA1DB00BD9BDF /* Location.h */,
+				45005B26195CA1DB00BD9BDF /* Location.m */,
+				45F3B078195E269C0082B048 /* LocationCell.h */,
+				45F3B079195E269C0082B048 /* LocationCell.m */,
+				4535949A195E0BDC00AD7D62 /* LocationsViewController.h */,
+				4535949B195E0BDC00AD7D62 /* LocationsViewController.m */,
+				450057C3195AE0B700E1496E /* LocationDetailsViewController.h */,
+				450057C4195AE0B700E1496E /* LocationDetailsViewController.m */,
+				45D87BAF195F43540064AA0F /* MapViewController.h */,
+				45D87BB0195F43540064AA0F /* MapViewController.m */,
+				45043286196198E200856817 /* NSMutableString+AddText.h */,
+				45043287196198E200856817 /* NSMutableString+AddText.m */,
+				4570D4631960CD00000E48DD /* UIImage+Resize.h */,
+				4570D4641960CD00000E48DD /* UIImage+Resize.m */,
+				45FE57161959E52A00D752FE /* Images.xcassets */,
+				45DB83201961DF9E00E4BEBB /* easy Location */,
+				4504328919619C7D00856817 /* Resources_3 */,
+				45FE57021959E52900D752FE /* Supporting Files */,
+			);
+			path = "Simple Locatopm";
+			sourceTree = "<group>";
+		};
+		45FE57021959E52900D752FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45FE57031959E52900D752FE /* Easy Location-Info.plist */,
+				45FE57041959E52900D752FE /* InfoPlist.strings */,
+				45FE57071959E52900D752FE /* main.m */,
+				45FE57091959E52900D752FE /* Easy Location-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45FE57231959E52A00D752FE /* Simple LocatopmTests */ = {
+			isa = PBXGroup;
+			children = (
+				45FE57291959E52A00D752FE /* Simple_LocatopmTests.m */,
+				45FE57241959E52A00D752FE /* Supporting Files */,
+			);
+			path = "Simple LocatopmTests";
+			sourceTree = "<group>";
+		};
+		45FE57241959E52A00D752FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45FE57251959E52A00D752FE /* Easy LocationTests-Info.plist */,
+				45FE57261959E52A00D752FE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45FE56F71959E52900D752FE /* Easy Location */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FE572D1959E52A00D752FE /* Build configuration list for PBXNativeTarget "Easy Location" */;
+			buildPhases = (
+				45FE56F41959E52900D752FE /* Sources */,
+				45FE56F51959E52900D752FE /* Frameworks */,
+				45FE56F61959E52900D752FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Easy Location";
+			productName = "Simple Locatopm";
+			productReference = 45FE56F81959E52900D752FE /* Easy Location.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45FE571B1959E52A00D752FE /* Easy LocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FE57301959E52A00D752FE /* Build configuration list for PBXNativeTarget "Easy LocationTests" */;
+			buildPhases = (
+				45FE57181959E52A00D752FE /* Sources */,
+				45FE57191959E52A00D752FE /* Frameworks */,
+				45FE571A1959E52A00D752FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45FE57221959E52A00D752FE /* PBXTargetDependency */,
+			);
+			name = "Easy LocationTests";
+			productName = "Simple LocatopmTests";
+			productReference = 45FE571C1959E52A00D752FE /* Easy LocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45FE56F01959E52900D752FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Hicham Chourak";
+				TargetAttributes = {
+					45FE571B1959E52A00D752FE = {
+						TestTargetID = 45FE56F71959E52900D752FE;
+					};
+				};
+			};
+			buildConfigurationList = 45FE56F31959E52900D752FE /* Build configuration list for PBXProject "Easy Location" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45FE56EF1959E52900D752FE;
+			productRefGroup = 45FE56F91959E52900D752FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45FE56F71959E52900D752FE /* Easy Location */,
+				45FE571B1959E52A00D752FE /* Easy LocationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45FE56F61959E52900D752FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FE57171959E52A00D752FE /* Images.xcassets in Resources */,
+				45DB83261961DF9E00E4BEBB /* easylocation_logo_80pt.png in Resources */,
+				45E3400D196DB85300DB49A5 /* Locations.png in Resources */,
+				45E34016196DB85300DB49A5 /* User@2x.png in Resources */,
+				45E34010196DB85300DB49A5 /* Map@2x.png in Resources */,
+				450432EF19619C7D00856817 /* Sound.caf in Resources */,
+				45DB83251961DF9E00E4BEBB /* easylocation_logo_60pt.png in Resources */,
+				45E34011196DB85300DB49A5 /* Pin.png in Resources */,
+				45E3400E196DB85300DB49A5 /* Locations@2x.png in Resources */,
+				45E34019196DB8DE00DB49A5 /* Checkmark.png in Resources */,
+				45DB83301961EA9200E4BEBB /* easylocation_logo.png in Resources */,
+				45DB832A1961E1A100E4BEBB /* easylocation_launch_r4.png in Resources */,
+				45E34015196DB85300DB49A5 /* User.png in Resources */,
+				45E3400F196DB85300DB49A5 /* Map.png in Resources */,
+				45DB83241961DF9E00E4BEBB /* easylocation_logo_29pt.png in Resources */,
+				45FE57061959E52900D752FE /* InfoPlist.strings in Resources */,
+				45E3401A196DB8DE00DB49A5 /* Checkmark@2x.png in Resources */,
+				45E34013196DB85300DB49A5 /* Tag.png in Resources */,
+				45FE570F1959E52900D752FE /* Main.storyboard in Resources */,
+				45E34012196DB85300DB49A5 /* Pin@2x.png in Resources */,
+				45DB83291961E1A100E4BEBB /* easylocation_launch_2x.png in Resources */,
+				45E34014196DB85300DB49A5 /* Tag@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE571A1959E52A00D752FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FE57281959E52A00D752FE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45FE56F41959E52900D752FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45005B24195C9D0B00BD9BDF /* DataModel.xcdatamodeld in Sources */,
+				45FE570C1959E52900D752FE /* AppDelegate.m in Sources */,
+				45D87BB1195F43540064AA0F /* MapViewController.m in Sources */,
+				45FE57121959E52900D752FE /* CurrentLocationViewController.m in Sources */,
+				45005B27195CA1DB00BD9BDF /* Location.m in Sources */,
+				4570D4651960CD00000E48DD /* UIImage+Resize.m in Sources */,
+				45FE57081959E52900D752FE /* main.m in Sources */,
+				4535949C195E0BDC00AD7D62 /* LocationsViewController.m in Sources */,
+				45005B18195C58CF00BD9BDF /* HudView.m in Sources */,
+				456140EE195B0CC400E7517C /* CategoryPickerViewController.m in Sources */,
+				45F3B07A195E269C0082B048 /* LocationCell.m in Sources */,
+				45043288196198E200856817 /* NSMutableString+AddText.m in Sources */,
+				450057C5195AE0B700E1496E /* LocationDetailsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45FE57181959E52A00D752FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FE572A1959E52A00D752FE /* Simple_LocatopmTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45FE57221959E52A00D752FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FE56F71959E52900D752FE /* Easy Location */;
+			targetProxy = 45FE57211959E52A00D752FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45FE57041959E52900D752FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45FE57051959E52900D752FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		45FE570D1959E52900D752FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45FE570E1959E52900D752FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45FE57261959E52A00D752FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45FE57271959E52A00D752FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45DB833119622CB500E4BEBB /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "D378000F-3417-4598-88D4-17748C4FF34B";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		45DB833219622CB500E4BEBB /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Locatopm/Easy Location-Prefix.pch";
+				INFOPLIST_FILE = "Simple Locatopm/Easy Location-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Easy Location";
+				PROVISIONING_PROFILE = "EBD2AD51-B6A4-46E0-A025-546B4227C476";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		45DB833319622CB500E4BEBB /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simple Locatopm.app/Simple Locatopm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Locatopm/Simple Locatopm-Prefix.pch";
+				INFOPLIST_FILE = "Simple LocatopmTests/Easy LocationTests-Info.plist";
+				PRODUCT_NAME = "Easy LocationTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+		45FE572B1959E52A00D752FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "D378000F-3417-4598-88D4-17748C4FF34B";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45FE572C1959E52A00D752FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "D378000F-3417-4598-88D4-17748C4FF34B";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45FE572E1959E52A00D752FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Locatopm/Easy Location-Prefix.pch";
+				INFOPLIST_FILE = "Simple Locatopm/Easy Location-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Easy Location";
+				PROVISIONING_PROFILE = "EBD2AD51-B6A4-46E0-A025-546B4227C476";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		45FE572F1959E52A00D752FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hicham Chourak (TF9VESMTKV)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Locatopm/Easy Location-Prefix.pch";
+				INFOPLIST_FILE = "Simple Locatopm/Easy Location-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Easy Location";
+				PROVISIONING_PROFILE = "EBD2AD51-B6A4-46E0-A025-546B4227C476";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		45FE57311959E52A00D752FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simple Locatopm.app/Simple Locatopm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Locatopm/Simple Locatopm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simple LocatopmTests/Easy LocationTests-Info.plist";
+				PRODUCT_NAME = "Easy LocationTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		45FE57321959E52A00D752FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Simple Locatopm.app/Simple Locatopm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simple Locatopm/Simple Locatopm-Prefix.pch";
+				INFOPLIST_FILE = "Simple LocatopmTests/Easy LocationTests-Info.plist";
+				PRODUCT_NAME = "Easy LocationTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45FE56F31959E52900D752FE /* Build configuration list for PBXProject "Easy Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FE572B1959E52A00D752FE /* Debug */,
+				45FE572C1959E52A00D752FE /* Release */,
+				45DB833119622CB500E4BEBB /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FE572D1959E52A00D752FE /* Build configuration list for PBXNativeTarget "Easy Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FE572E1959E52A00D752FE /* Debug */,
+				45FE572F1959E52A00D752FE /* Release */,
+				45DB833219622CB500E4BEBB /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FE57301959E52A00D752FE /* Build configuration list for PBXNativeTarget "Easy LocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FE57311959E52A00D752FE /* Debug */,
+				45FE57321959E52A00D752FE /* Release */,
+				45DB833319622CB500E4BEBB /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45005B22195C9D0B00BD9BDF /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45005B23195C9D0B00BD9BDF /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 45005B23195C9D0B00BD9BDF /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = ../DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45FE56F01959E52900D752FE /* Project object */;
+}
