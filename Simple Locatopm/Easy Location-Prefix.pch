@@ -16,6 +16,7 @@
     #import <CoreLocation/CoreLocation.h>
     #import <CoreData/CoreData.h>
     #import <MapKit/MapKit.h>
-
-    #endif
+    #import "GAI.h"
+    #import "GAIFields.h"
+#endif
 

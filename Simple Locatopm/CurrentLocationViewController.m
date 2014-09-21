@@ -11,6 +11,7 @@
 #import "NSMutableString+AddText.h"
 #import <AudioToolbox/AudioServices.h>
 #import <QuartzCore/QuartzCore.h>
+#import "GAIDictionaryBuilder.h"
 
 @interface CurrentLocationViewController ()
 
@@ -43,6 +44,16 @@
     } else {
         [self hideLogoViewAnimated:NO];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"CurrentLocationView"];
+    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -289,6 +300,11 @@
 - (void)startLocationManager
 {
     if ([CLLocationManager locationServicesEnabled]) {
+        
+        if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [locationManager requestWhenInUseAuthorization];
+        }
+        
         locationManager.delegate = self;
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         [locationManager startUpdatingLocation];

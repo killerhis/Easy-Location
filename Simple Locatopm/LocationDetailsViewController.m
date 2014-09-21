@@ -11,6 +11,7 @@
 #import "Location.h"
 #import "AppDelegate.h"
 #import "NSMutableString+AddText.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface LocationDetailsViewController ()
 
@@ -85,6 +86,16 @@
     
     gestureRecognizer.cancelsTouchesInView = NO;
     [self.tableView addGestureRecognizer:gestureRecognizer];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"LocationDetailView"];
+    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -178,7 +189,7 @@
 
 - (int)nextPhotoId
 {
-    int photoId = [[NSUserDefaults standardUserDefaults] integerForKey:@"PhotoID"];
+    int photoId = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"PhotoID"];
     [[NSUserDefaults standardUserDefaults] setInteger:photoId+1 forKey:@"PhotoID"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     return photoId;

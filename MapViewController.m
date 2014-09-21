@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "Location.h"
 #import "LocationDetailsViewController.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface MapViewController ()
 
@@ -56,6 +57,16 @@
     if ([locations count] > 0) {
         [self showLocations];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"LocationMapView"];
+    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
 - (void)didReceiveMemoryWarning

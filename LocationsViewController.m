@@ -12,6 +12,7 @@
 #import "LocationDetailsViewController.h"
 #import "UIImage+Resize.h"
 #import "NSMutableString+AddText.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface LocationsViewController ()
 
@@ -72,6 +73,16 @@
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self performFetch];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"LocationListView"];
+    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -281,6 +292,12 @@
         case NSFetchedResultsChangeDelete:
             //NSLog(@"*** controllerDidChangeSection - NSFetchedResultsChangeDelete");
             [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        case NSFetchedResultsChangeMove:
+            NSLog(@"*** NSFetchedResultsChangeMove");
+            break;
+        case NSFetchedResultsChangeUpdate:
+            NSLog(@"*** NSFetchedResultsChangeUpdate");
             break;
     }
 }

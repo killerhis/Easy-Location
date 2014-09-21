@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381FF989DE4F45BEA11C217C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF83C3010F434130AB3975F1 /* libPods.a */; };
 		450057C5195AE0B700E1496E /* LocationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450057C4195AE0B700E1496E /* LocationDetailsViewController.m */; };
 		45005B18195C58CF00BD9BDF /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45005B17195C58CF00BD9BDF /* HudView.m */; };
 		45005B21195C9A3000BD9BDF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45005B20195C9A3000BD9BDF /* CoreData.framework */; };
@@ -24,8 +25,6 @@
 		45DB83241961DF9E00E4BEBB /* easylocation_logo_29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83211961DF9E00E4BEBB /* easylocation_logo_29pt.png */; };
 		45DB83251961DF9E00E4BEBB /* easylocation_logo_60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83221961DF9E00E4BEBB /* easylocation_logo_60pt.png */; };
 		45DB83261961DF9E00E4BEBB /* easylocation_logo_80pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83231961DF9E00E4BEBB /* easylocation_logo_80pt.png */; };
-		45DB83291961E1A100E4BEBB /* easylocation_launch_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83271961E1A100E4BEBB /* easylocation_launch_2x.png */; };
-		45DB832A1961E1A100E4BEBB /* easylocation_launch_r4.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB83281961E1A100E4BEBB /* easylocation_launch_r4.png */; };
 		45DB83301961EA9200E4BEBB /* easylocation_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 45DB832F1961EA9200E4BEBB /* easylocation_logo.png */; };
 		45E3400D196DB85300DB49A5 /* Locations.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34003196DB85300DB49A5 /* Locations.png */; };
 		45E3400E196DB85300DB49A5 /* Locations@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34004196DB85300DB49A5 /* Locations@2x.png */; };
@@ -39,6 +38,9 @@
 		45E34016196DB85300DB49A5 /* User@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E3400C196DB85300DB49A5 /* User@2x.png */; };
 		45E34019196DB8DE00DB49A5 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34017196DB8DE00DB49A5 /* Checkmark.png */; };
 		45E3401A196DB8DE00DB49A5 /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E34018196DB8DE00DB49A5 /* Checkmark@2x.png */; };
+		45ED2CAB19CF7F0C00843E8B /* easylocation_launch_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45ED2CA819CF7F0C00843E8B /* easylocation_launch_2x.png */; };
+		45ED2CAC19CF7F0C00843E8B /* easylocation_launch_r4.png in Resources */ = {isa = PBXBuildFile; fileRef = 45ED2CA919CF7F0C00843E8B /* easylocation_launch_r4.png */; };
+		45ED2CAD19CF7F0C00843E8B /* easylocation_logo_60pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45ED2CAA19CF7F0C00843E8B /* easylocation_logo_60pt@3x.png */; };
 		45F3B07A195E269C0082B048 /* LocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F3B079195E269C0082B048 /* LocationCell.m */; };
 		45FE56FC1959E52900D752FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE56FB1959E52900D752FE /* Foundation.framework */; };
 		45FE56FE1959E52900D752FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FE56FD1959E52900D752FE /* CoreGraphics.framework */; };
@@ -93,8 +95,6 @@
 		45DB83211961DF9E00E4BEBB /* easylocation_logo_29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo_29pt.png; sourceTree = "<group>"; };
 		45DB83221961DF9E00E4BEBB /* easylocation_logo_60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo_60pt.png; sourceTree = "<group>"; };
 		45DB83231961DF9E00E4BEBB /* easylocation_logo_80pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo_80pt.png; sourceTree = "<group>"; };
-		45DB83271961E1A100E4BEBB /* easylocation_launch_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_launch_2x.png; sourceTree = "<group>"; };
-		45DB83281961E1A100E4BEBB /* easylocation_launch_r4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_launch_r4.png; sourceTree = "<group>"; };
 		45DB832F1961EA9200E4BEBB /* easylocation_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_logo.png; sourceTree = "<group>"; };
 		45E34003196DB85300DB49A5 /* Locations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locations.png; sourceTree = "<group>"; };
 		45E34004196DB85300DB49A5 /* Locations@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Locations@2x.png"; sourceTree = "<group>"; };
@@ -108,6 +108,9 @@
 		45E3400C196DB85300DB49A5 /* User@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User@2x.png"; sourceTree = "<group>"; };
 		45E34017196DB8DE00DB49A5 /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
 		45E34018196DB8DE00DB49A5 /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
+		45ED2CA819CF7F0C00843E8B /* easylocation_launch_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_launch_2x.png; sourceTree = "<group>"; };
+		45ED2CA919CF7F0C00843E8B /* easylocation_launch_r4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easylocation_launch_r4.png; sourceTree = "<group>"; };
+		45ED2CAA19CF7F0C00843E8B /* easylocation_logo_60pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "easylocation_logo_60pt@3x.png"; sourceTree = "<group>"; };
 		45F3B078195E269C0082B048 /* LocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationCell.h; path = ../LocationCell.h; sourceTree = "<group>"; };
 		45F3B079195E269C0082B048 /* LocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationCell.m; path = ../LocationCell.m; sourceTree = "<group>"; };
 		45FE56F81959E52900D752FE /* Easy Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +133,8 @@
 		45FE57271959E52A00D752FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45FE57291959E52A00D752FE /* Simple_LocatopmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_LocatopmTests.m; sourceTree = "<group>"; };
 		45FE57331959F2D400D752FE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AF83C3010F434130AB3975F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E66A2AD3ED406489DE29F2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +150,7 @@
 				45FE56FE1959E52900D752FE /* CoreGraphics.framework in Frameworks */,
 				45FE57001959E52900D752FE /* UIKit.framework in Frameworks */,
 				45FE56FC1959E52900D752FE /* Foundation.framework in Frameworks */,
+				381FF989DE4F45BEA11C217C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,9 +187,10 @@
 		45DB83201961DF9E00E4BEBB /* easy Location */ = {
 			isa = PBXGroup;
 			children = (
+				45ED2CA819CF7F0C00843E8B /* easylocation_launch_2x.png */,
+				45ED2CA919CF7F0C00843E8B /* easylocation_launch_r4.png */,
+				45ED2CAA19CF7F0C00843E8B /* easylocation_logo_60pt@3x.png */,
 				45DB832F1961EA9200E4BEBB /* easylocation_logo.png */,
-				45DB83271961E1A100E4BEBB /* easylocation_launch_2x.png */,
-				45DB83281961E1A100E4BEBB /* easylocation_launch_r4.png */,
 				45DB83211961DF9E00E4BEBB /* easylocation_logo_29pt.png */,
 				45DB83221961DF9E00E4BEBB /* easylocation_logo_60pt.png */,
 				45DB83231961DF9E00E4BEBB /* easylocation_logo_80pt.png */,
@@ -217,6 +224,7 @@
 				45FE57231959E52A00D752FE /* Simple LocatopmTests */,
 				45FE56FA1959E52900D752FE /* Frameworks */,
 				45FE56F91959E52900D752FE /* Products */,
+				B5E66A2AD3ED406489DE29F2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,6 +249,7 @@
 				45FE56FD1959E52900D752FE /* CoreGraphics.framework */,
 				45FE56FF1959E52900D752FE /* UIKit.framework */,
 				45FE571D1959E52A00D752FE /* XCTest.framework */,
+				AF83C3010F434130AB3975F1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -316,9 +325,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45FE572D1959E52A00D752FE /* Build configuration list for PBXNativeTarget "Easy Location" */;
 			buildPhases = (
+				C9C44ED1F22A49DB8B906D12 /* Check Pods Manifest.lock */,
 				45FE56F41959E52900D752FE /* Sources */,
 				45FE56F51959E52900D752FE /* Frameworks */,
 				45FE56F61959E52900D752FE /* Resources */,
+				1E78A5138BE144368580951F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,14 +400,15 @@
 				45DB83261961DF9E00E4BEBB /* easylocation_logo_80pt.png in Resources */,
 				45E3400D196DB85300DB49A5 /* Locations.png in Resources */,
 				45E34016196DB85300DB49A5 /* User@2x.png in Resources */,
+				45ED2CAD19CF7F0C00843E8B /* easylocation_logo_60pt@3x.png in Resources */,
 				45E34010196DB85300DB49A5 /* Map@2x.png in Resources */,
 				450432EF19619C7D00856817 /* Sound.caf in Resources */,
 				45DB83251961DF9E00E4BEBB /* easylocation_logo_60pt.png in Resources */,
+				45ED2CAC19CF7F0C00843E8B /* easylocation_launch_r4.png in Resources */,
 				45E34011196DB85300DB49A5 /* Pin.png in Resources */,
 				45E3400E196DB85300DB49A5 /* Locations@2x.png in Resources */,
 				45E34019196DB8DE00DB49A5 /* Checkmark.png in Resources */,
 				45DB83301961EA9200E4BEBB /* easylocation_logo.png in Resources */,
-				45DB832A1961E1A100E4BEBB /* easylocation_launch_r4.png in Resources */,
 				45E34015196DB85300DB49A5 /* User.png in Resources */,
 				45E3400F196DB85300DB49A5 /* Map.png in Resources */,
 				45DB83241961DF9E00E4BEBB /* easylocation_logo_29pt.png in Resources */,
@@ -405,8 +417,8 @@
 				45E34013196DB85300DB49A5 /* Tag.png in Resources */,
 				45FE570F1959E52900D752FE /* Main.storyboard in Resources */,
 				45E34012196DB85300DB49A5 /* Pin@2x.png in Resources */,
-				45DB83291961E1A100E4BEBB /* easylocation_launch_2x.png in Resources */,
 				45E34014196DB85300DB49A5 /* Tag@2x.png in Resources */,
+				45ED2CAB19CF7F0C00843E8B /* easylocation_launch_2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +431,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E78A5138BE144368580951F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C44ED1F22A49DB8B906D12 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45FE56F41959E52900D752FE /* Sources */ = {
@@ -523,6 +568,7 @@
 		};
 		45DB833219622CB500E4BEBB /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E66A2AD3ED406489DE29F2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -631,6 +677,7 @@
 		};
 		45FE572E1959E52A00D752FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E66A2AD3ED406489DE29F2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -647,6 +694,7 @@
 		};
 		45FE572F1959E52A00D752FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E66A2AD3ED406489DE29F2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

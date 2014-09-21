@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Current Location View Controller - First-->
+        <!--First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
                 <viewController title="First" id="CZ4-MO-1fc" customClass="CurrentLocationViewController" sceneMemberID="viewController">
@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="1215" y="-616"/>
         </scene>
-        <!--Navigation Controller - Locations-->
+        <!--Locations-->
         <scene sceneID="JJE-qe-ZzJ">
             <objects>
                 <navigationController definesPresentationContext="YES" id="wzW-1f-sXQ" sceneMemberID="viewController">
@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="681" y="180"/>
         </scene>
-        <!--Map View Controller - Map-->
+        <!--Map-->
         <scene sceneID="ftm-pT-891">
             <objects>
                 <viewController id="zLw-Vv-zCU" customClass="MapViewController" sceneMemberID="viewController">
@@ -161,7 +161,7 @@
             </objects>
             <point key="canvasLocation" x="1215" y="967"/>
         </scene>
-        <!--Locations View Controller - Locations-->
+        <!--Locations-->
         <scene sceneID="S1u-1f-84G">
             <objects>
                 <tableViewController id="3Sz-OX-k5e" customClass="LocationsViewController" sceneMemberID="viewController">
@@ -216,7 +216,7 @@
             </objects>
             <point key="canvasLocation" x="1215" y="180"/>
         </scene>
-        <!--Location Details View Controller - Tag Location-->
+        <!--Tag Location-->
         <scene sceneID="w6r-kM-9pV">
             <objects>
                 <tableViewController id="GSg-pn-FJL" customClass="LocationDetailsViewController" sceneMemberID="viewController">
@@ -434,7 +434,7 @@
             </objects>
             <point key="canvasLocation" x="2331" y="180"/>
         </scene>
-        <!--Category Picker View Controller - Choose Category-->
+        <!--Choose Category-->
         <scene sceneID="mTx-PO-mKX">
             <objects>
                 <tableViewController id="RdX-Yq-Ttq" customClass="CategoryPickerViewController" sceneMemberID="viewController">
@@ -453,7 +453,7 @@
             </objects>
             <point key="canvasLocation" x="2863" y="180"/>
         </scene>
-        <!--Navigation Controller - Tag-->
+        <!--Tag-->
         <scene sceneID="2kL-vz-h8b">
             <objects>
                 <navigationController definesPresentationContext="YES" id="88d-lr-Gay" sceneMemberID="viewController">
@@ -510,7 +510,7 @@
             </objects>
             <point key="canvasLocation" x="1789" y="180"/>
         </scene>
-        <!--Navigation Controller - Map-->
+        <!--Map-->
         <scene sceneID="f1e-un-Pdu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="v3M-vz-Vkb" sceneMemberID="viewController">
@@ -544,6 +544,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="W5l-cU-Yy6"/>
+        <segue reference="k8S-1k-6Y5"/>
     </inferredMetricsTieBreakers>
 </document>

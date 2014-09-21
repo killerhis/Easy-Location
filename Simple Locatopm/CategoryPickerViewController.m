@@ -7,6 +7,7 @@
 //
 
 #import "CategoryPickerViewController.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface CategoryPickerViewController ()
 
@@ -43,6 +44,16 @@
                   @"Landmark",
                   @"Park",
                   nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Google Analytics
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"CategoryPickerView"];
+    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
 - (void)didReceiveMemoryWarning

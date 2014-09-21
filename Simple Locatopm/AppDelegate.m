@@ -42,6 +42,12 @@
     //MapViewController *mapViewController = (MapViewController *)[[tabBarController viewControllers] objectAtIndex:2];
     //mapViewController.managedObjectContext = self.managedObjectContext;
     
+    // GA Setup
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
+    [GAI sharedInstance].dispatchInterval = 20;
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-54104285-4"];
+    
     return YES;
 }
 							
